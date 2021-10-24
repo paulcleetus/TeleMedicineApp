@@ -257,7 +257,12 @@ class registerationState extends State<registeration> {
               //SizedBox(height: 100),
               RaisedButton(
                   child: Text('Register', style: TextStyle(color: Colors.blue, fontSize: 16 ) ),
-                  onPressed: () => {},
+                onPressed: () {
+                  Navigator.pushNamed(
+                    context,
+                    '/',
+                  );
+                },
               )
             ],
           ),

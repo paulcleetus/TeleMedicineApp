@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:telemedicineapp/registeration.dart';
 import 'package:telemedicineapp/dashboard.dart';
+import 'package:telemedicineapp/appoinments.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/register': (context) =>  registeration(),
         '/dashboard': (context) =>  dashboard(),
+        '/appoinments': (context) => appoinments(),
       },
     );
   }

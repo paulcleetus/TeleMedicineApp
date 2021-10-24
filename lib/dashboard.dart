@@ -35,12 +35,21 @@ class dashboardState extends State<dashboard> {
                         textAlign: TextAlign.center,),
                       color: Colors.green[100],
                     ),
-                    Container(
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.pushNamed(
+                          context,
+                          '/appoinments',
+                        );
+                      },
+                      child: Container(
                       padding: const EdgeInsets.all(8),
                       child: const Text('Appointments',
                         style: TextStyle(fontWeight: FontWeight.bold),
-                        textAlign: TextAlign.center,),
+                        textAlign: TextAlign.center,
+                      ),
                       color: Colors.green[200],
+                    ),
                     ),
                     Container(
                       padding: const EdgeInsets.all(8),
@@ -77,7 +86,7 @@ class dashboardState extends State<dashboard> {
           )
 
           ),
-        )
+        ),
     );
   }
 }
